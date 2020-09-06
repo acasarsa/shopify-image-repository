@@ -33,11 +33,12 @@
     <% @posts.map do |post|  %>
       <% post.resized_images.each do |thumbnail| %>
       <div class="image-container">
-        <h3><%= link_to post.title, post %> </h3>
+        <h3>Album Title: <%= link_to post.title, post %> </h3>
         <div class="thumb">
           <%= link_to image_tag(thumbnail), post %>
         </div>
       </div>
+      <hr>
       <% end %>
     <% end %>
   </div>
