@@ -2,7 +2,7 @@ class DropUsersTable < ActiveRecord::Migration[6.0]
   def change
     drop_table :users do |t|
       t.string :name 
-      t.string :password
+      t.string :password_digest
     end
   end
 end

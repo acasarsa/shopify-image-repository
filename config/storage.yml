@@ -12,7 +12,8 @@ amazon:
   access_key_id: <%= ENV["S3_KEY"] %>
   secret_access_key: <%= ENV["S3_SECRET"] %>
   region: us-east-1
-  bucket: your_own_bucket
+  bucket: image-repository-shopify-dev
+
 
 # Remember not to checkin your GCS keyfile to a repository
 # google:
