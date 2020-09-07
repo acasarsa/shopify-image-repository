@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
   database: dev_image_repository_production
   username: dev_image_repository
   password: <%= ENV['DEV_IMAGE_REPOSITORY_DATABASE_PASSWORD'] %>
