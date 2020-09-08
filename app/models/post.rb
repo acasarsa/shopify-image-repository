@@ -3,12 +3,6 @@ class Post < ApplicationRecord
   validates :title, presence: true
   validate :image_type
 
-  # def thumbnails
-  #   self.images.map do |image|
-  #     image.variant(resize: '500x500').processed
-  #   end
-  # end
-
   def resized_images
     self.images.map { |img| img.variant(resize: '500x500').processed }
   end
