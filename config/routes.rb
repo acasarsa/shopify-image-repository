@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
 
-  resources :users
   root to: 'posts#index'
-  resources :posts
+  resources :posts, except: [:edit, :update]
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
